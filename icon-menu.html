@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Mastodon-Icon in Social Media Menü in Wordpress</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Mastodon-Icon in Social Media Menüs in Wordpress</h1>
+      
+      <h2 id="problem">Problem</h2>
+<p>Viele Themes in Wordpress (und warscheinlich auch in anderen CMS) ermöglichen es, Social Media Icons auf der Website zu platzieren. Die Links zu den proprietären Plattformen wie Facebook, Twitter, Instagram ... werden dabei automatisch erkannt und mit dem passenden Icons angezeigt. Ein Link zu einer Mastodon-Instanz dagegen in der Regel nicht. Bei mir wurde dieser Link dann einfach nur mit einem &#39;Büroklammer&#39;-Symbol angezeigt. Das ist blöd, weil dann das Fediverse und speziell Mastodon nicht wirklich sichtbar ist. </p>
+<h2 id="mein-vorgehen-">Mein Vorgehen:</h2>
+<ol>
+<li>Über den Web-Inspektor nachschauen, welche CSS-ID ein Icon-Menü-Eintrag hat. </li>
+<li>Aus <a href="https://icon-sets.iconify.design/?query=mastodon">diesen Mastodon-Icons</a> das gewünschte auswählen.</li>
+<li>Das Icon farblich und von der Größe her so anpassen, dass es zu den übrigen Icons in der Leiste passt.</li>
+<li>Unten bei &#39;for developers&#39; CSS auswählen und den zweiten Code kopieren, d.h. den, der mit &#39;content:&#39; beginnt</li>
+<li>Daraus einen CSS-Befehl zusammenbasteln, in dem auch ein Teil der URL der eigenen Mastodon-Instant drinsteht. </li>
+<li>Diesen Befehl im Ciustomizer des Themes unter &#39;Custom CSS&#39; eintragen.</li>
+</ol>
+<h2 id="beispiel-">Beispiel:</h2>
+<ul>
+<li>Bei mir ist die Icon-Liste über &quot;.s-icons&quot; zu finden.</li>
+<li>Über die Farbpipette im Firefox-Browser konnte ich herausfinden, dass die Farbe der anderen Icons den Wert #5f6973 (= ein dunkles Grau hat) und dass die Icons etwas größer sind, als das hier angebotene Mastodon-Icon.</li>
+<li>Ich bin auf der Instanz digitalcourage.social.</li>
+</ul>
+<h2 id="ergebnis">Ergebnis</h2>
+<p>Als zusätzlicher Code, den ich als Custom-CSS im Customizer eintrage ergibt sich:  </p>
+<pre><code class="lang-css">
+<span class="hljs-selector-class">.s-icons</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-attr">[href*="digitalcourage.social"]</span><span class="hljs-selector-pseudo">::before</span> {<span class="hljs-attribute">content</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">'https://api.iconify.design/bi/mastodon.svg?color=%235f6973&amp;width=18&amp;height=18'</span>);}
+</code></pre>
+
+    </main>
+  </body>
+</html>
