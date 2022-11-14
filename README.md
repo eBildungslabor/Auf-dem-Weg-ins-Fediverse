@@ -1,7 +1,11 @@
-# Auf dem Weg ins Fediverse
-Notizen zur Anpassung meiner Social Media Routinen und Webinhalte und für Mastodon - work in progress 😸
+# Notizen zur Anpassung meiner Webinhalte für Mastodon - work in progress 😸
 
-1. Social Media Icon für Mastodon in der linken Seitenspalte auf meiner [eBildungslabor-Website](https://ebildungslabor.de) anzeigen. [Hier habe ich mein Vorgehen dazu erklärt](https://ebildungslabor.github.io/mastodon/icon-menu.html) 
-2. [Eigene Peertube-Instanz](https://ebildungslabor.video) einrichten.  [Hier habe ich mein Vorgehen dazu beschrieben](https://ebildungslabor.github.io/mastodon/peertube.html)
-3. Meinen Blog zu einem Teil des Fediverse machen. [Hier habe ich das Vorgehen erklärt](https://ebildungslabor.github.io/mastodon/blog.html)
-4. Lösung für Sharing-Buttons finden. [Hier habe ich mein Vorgehen erklärt](https://ebildungslabor.github.io/mastodon/sharing.html)
+✅ Ich habe im Menü auf meiner eBildungslabor-Website ein Social Media Icon für Mastodon in der linken Seitenspalte gestaltet. -> [Erklärung dazu]()
+✅ Ich habe eine [eigene Peertube-Instanz](https://ebildungslabor.video) eingerichtet. Große Empfehlung für [Weingärtner IT](https://weingaertner-it.de) 
+✅ Ich habe meinen Blog zu einem Teil des Fediverse gemacht. Dazu habe ich im Blog einen [Beitrag](https://ebildungslabor.de/blog/activitypub-bei-wordpress-einen-blog-in-ein-soziales-netzwerk-bringen/) geschrieben.
+✅ Lösung für Sharing-Buttons finden. -> [Erklärung dazu]()
+
+# Selbstbeobachtungen zu meinen Social Media Routinen
+
+* Ich habe über 'Reichweite' im Fediverse nachgedacht. Beobachtung: Mehr Favs und Boosts als bei Twitter bei Tröts, die für viele Menschen relevant sind bei nur ca. 1/4 der Follower. Das bedeutet: Hohe Reichweite ist möglich, aber eben nur bei als relevant empfundenen Dingen. Das scheint auch sinnvoll, denn es geht ja nicht um Reichweite, um der Reichweite willen, sondern darum, dass meine Inhalte möglichst viele der Menschen erreichen für die sie potentiell relevant sein können. 
+* Ich stelle fest, dass ich nach einigen Monaten im Fediverse deutlich häufiger auf die Sichtbarkeit 'nur für erwähnte Personen' umschalte. Ich mag es sehr gerne, wie direkt sich das an einen Tröt oder an eine Unterhaltung anfügen kann. Und es hilft, mich selbst weniger wichtig zu neh,en (Wichtige Frage für mich dazu: Will ich mit anderen Menschen kommunizieren oder will ich, dass andere Menschen sehen, wie cool ich kommuniziere?)
