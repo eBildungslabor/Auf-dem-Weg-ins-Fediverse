@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Lösung für Sharing Buttons auf meiner Website</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Sharing Buttons auf meiner Website</h1>
+      
+      <h2 id="problem">Problem</h2>
+<p>Ich habe lange Zeit auf meiner Website unter Beiträgen 'Sharing-Buttons' verwendet. Standardmäßig kann ich dort aus einer Liste proprietärer Plattformen auswählen. Das Fediverse ist in der Regel nicht mit dabei - und Teilen funktioniert hier auch nicht mit einrm Klick, weil immer erst Instanz bzw. auch Plattform angegeben werden muss.</p>
+<h2 id="mein-vorgehen-">Meine Recherche und Überlegungen:</h2>
+<p>Ich habe mir unterschiedliche Lösungen für Sharing-Buttons für Mastodon bzw. das Fediverse angesehen. Am niederschwelligsten scheint mir [Toot](https://toot.kytta.dev) zu sein. Hier kann ich einfach einen Link generieren, der Nutzende dann dazu auffordert, ihre Instanz einzugeben - danach können sie den Beitrag tooten. </p>
+      <p>Beispiel</p>
+<p>      <code><a href="https://toot.kytta.dev/?text=Blogbeitrag%20https%3A%2F%2ebildungslabor.de">Teile diesen Beitrag auf Mastodon</a></code>
+  </p>
+  <p>Ergebnis: <a href="https://toot.kytta.dev/?text=Blogbeitrag%20https%3A%2F%2ebildungslabor.de">Teile diesen Beitrag auf Mastodon</a>    
+      </p>
+      <p>Soweit so gut. Damit wäre es relativ einfach möglich, Mastodon bei den Sharing Buttons zu ergänzen.</p>
+      <p>Ich habe mir aber überlegt, ob das in solch einer klassischen Form, auch wenn man das überall sieht, überhaupt sinnvoll ist. Meine Antwort war 'Eher Nein!' Ich möchte gerne, dass Inhalte von mir für andere hilfreich sind - das gelingt aber sicherlich nicht, indem ich alle dazu auffordere sie mit vorformulierten Texten ins Internet zu posaunen.</p>    
+<h2 id="beispiel-">Gefundene Lösung</h2>
+<p>Die für mich bessere Lösung statt klassischer Sharing-Buttons ist ein Button, mit dem sich der Beitragslink kopieren lässt. Das ist dann keine Aufforderung im Sinne von 'Bitte verbreute meinen Content', sondern eine Einladung bzw. Ermöglichung: 'Mache mit diesem Link, was Du möchtest'. Menschen können den Link dann also für sich abspeichern, mit ihren eigenen Anmerkungen in sozialen Netzwerken teilen oder auch direkt an Kolleg*innen weitergeben. Nebenbei löst sich das Problem mit der potentiellen Kompliziertheit eines Fediverse-Sharing-Buttons, denn den brauche ich jetzt ja gar nicht mehr :-)</p>
+      
+<h2 id="ergebnis">Mein Vorgehen</h2>
+<p>Um einen 'Kopiere den Beitragslink'-Button unter jeden Beitrag einzufügen, bin ich folgendermaßen vorgegangen:
+      <ul><li>Ich habe mir [diesen Code](https://orclqa.com/copy-url-clipboard/) geklaut und leicht angepasst - und zwar so:</li>
+        <p><code>
+          <html>
+<body>
+	<p>
+		<hr>
+	</p>
+<h5>
+	Beitrag merken & teilen
+	</h5>
+	<p>
+		Hier kannst Du dir den Link zum Beitrag kopieren - beispielsweise um ihn für Dich zu speichern oder mit anderen zu teilen.
+	</p>
+<button onclick="copyToClipboard()">Link kopieren</button>
+
+<script>
+function copyToClipboard(text) {
+var inputc = document.body.appendChild(document.createElement("input"));
+inputc.value = window.location.href;
+inputc.focus();
+inputc.select();
+document.execCommand('copy');
+inputc.parentNode.removeChild(inputc);
+alert("Du hast den Beitragslink kopiert und kannst ihn nun dort nutzen bzw. teilen, wo Du möchtest.");
+}
+</script>
+
+</body>
+          </html></code></p>
+          <li>Ich habe das WPCode Plugin auf meiner Website - und kann den Code dort in ein Custom-Code Feld einfügen und dieses aktivieren</li>
+    <li>Für die Sichtbarkeit des Code stelle ich 'Unter jedem Beitragsinhalt' ein.</li></ul>
+  <p>Fertig! Das Ergebnis kannst Du Dir <a href="https://ebildungslabor.de/category/blog">auf meinem Blog</a> ansehen.  
+  </main>
+  </body>
+</html>
