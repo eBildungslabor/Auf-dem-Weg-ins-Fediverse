@@ -1,6 +1,6 @@
 # Notizen zur Anpassung meiner Webinhalte für Mastodon - work in progress 😸
 
-✅ Ich habe im Menü auf meiner eBildungslabor-Website ein Social Media Icon für Mastodon in der linken Seitenspalte gestaltet. -> [Erklärung dazu](https://ebildungslabor.github.io/Auf-dem-Weg-ins-Fediverse/social-menu-icons.html)
+✅ Ich habe im Menü auf meiner eBildungslabor-Website ein Social Media Icon für Mastodon in der linken Seitenspalte gestaltet. -> [Erklärung dazu](https://ebildungslabor.github.io/Auf-dem-Weg-ins-Fediverse/icon-menu.html)
 
 ✅ Ich habe eine [eigene Peertube-Instanz](https://ebildungslabor.video) eingerichtet. Große Empfehlung für [Weingärtner IT](https://weingaertner-it.de) 
 
