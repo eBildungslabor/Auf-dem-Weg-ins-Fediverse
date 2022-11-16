@@ -8,7 +8,7 @@
 
 ✅ Ich habe meinen Blog zu einem Teil des Fediverse gemacht. Dazu habe ich im Blog einen [Beitrag](https://ebildungslabor.de/blog/activitypub-bei-wordpress-einen-blog-in-ein-soziales-netzwerk-bringen/) geschrieben.
 
-✅ Lösung für Sharing-Buttons finden. -> [Erklärung dazu](https://ebildungslabor.github.io/Auf-dem-Weg-ins-Fediverse/sharing.html)
+✅ Ich habe eine Lösung/ Alternative für die bisherigen Sharing-Buttons auf meiner Website gefunden. -> [Erklärung dazu](https://ebildungslabor.github.io/Auf-dem-Weg-ins-Fediverse/sharing.html)
 
 ## Selbstbeobachtungen zu meinen Routinen
 
